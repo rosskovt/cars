@@ -11,7 +11,7 @@ function App() {
             <CarList />
             <CarValue />
         </div>
-    )
+    );
 };
 
 export default App;

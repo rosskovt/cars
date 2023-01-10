@@ -25,7 +25,7 @@ function CarList() {
             <p>{car.name} - ${car.cost}</p>
             <button className="button is-danger" onClick={() => handleCarDelete(car)}>Delete</button>
         </div>
-        )
+        );
     });
 
     return (
@@ -33,7 +33,7 @@ function CarList() {
             {renderedCars}
             <hr />
         </div>
-    )
-}
+    );
+};
 
 export default CarList;

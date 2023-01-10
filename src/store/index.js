@@ -7,8 +7,8 @@ const store = configureStore({
     reducer: {
         cars: carsReducer,
         form: formReducer,
-    }
-})
+    },
+});
 
 // console.log(store.getState());
 

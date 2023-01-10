@@ -6,12 +6,12 @@ function CarForm() {
     const { name, cost } = useSelector((state) => {
         return {
             name: state.form.name,
-            cost: state.form.cost
+            cost: state.form.cost,
         }
     });
 
     const handleNameChange = (event) => {
-        ; dispatch(changeName(event.target.value));
+        dispatch(changeName(event.target.value));
     };
 
     const handleCostChange = (event) => {
@@ -23,8 +23,8 @@ function CarForm() {
         dispatch(addCar({
             name,
             cost,
-        }))
-    }
+        }));
+    };
 
     return (
         <div className="car-form panel">
@@ -54,7 +54,7 @@ function CarForm() {
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
 
 export default CarForm;

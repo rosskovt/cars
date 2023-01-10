@@ -20,7 +20,7 @@ function CarValue() {
         <div className="car-value">
             Total Coast ${totalCost}
         </div>
-    )
-}
+    );
+};
 
 export default CarValue;

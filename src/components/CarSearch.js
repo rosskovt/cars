@@ -9,7 +9,7 @@ function CarSearch() {
 
     const handleSearchTermChange = (event) => {
         dispatch(changeSearchTerm(event.target.value));
-    }
+    };
 
     return (
         <div className="list-header">
@@ -19,7 +19,7 @@ function CarSearch() {
                 <input className="input" value={searchTerm} onChange={handleSearchTermChange} />
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default CarSearch;
